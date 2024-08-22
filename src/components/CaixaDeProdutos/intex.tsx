@@ -1,29 +1,54 @@
-// import { FaCartPlus } from "react-icons/fa";
+import { FaCartPlus } from "react-icons/fa";
+
 import { 
     Conteiner,
     ImageProduto,
     TextDescricao,
     DivDoValor,
     TextValor,
-    TextTitulo
+    TextTitulo,
+    DivProduto
 } from "./styles";
 
-export function CaixaDeProduto() {
+interface typeBox {
+    titulo: string,
+    descricao: string,
+    valor: string,
+    img: string,
+    alt: string 
+}
+
+export function CaixaDeProduto({ titulo, descricao, valor, img, alt }: typeBox) {
     return(
         <Conteiner>
-            <ImageProduto/>
-            <TextTitulo>
-                Cheese Burger Duplo
-            </TextTitulo>
-            <TextDescricao>
-                Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa
-            </TextDescricao>
-            <DivDoValor>
-                <TextValor>
-
-                </TextValor>
-                {/* <FaCartPlus /> */}
-            </DivDoValor>
+            <ImageProduto
+                src={img}
+                alt={alt}
+            />
+            <DivProduto>
+                <TextTitulo>
+                    {titulo}
+                </TextTitulo>
+                <TextDescricao>
+                    {descricao}
+                </TextDescricao>
+                <DivDoValor>
+                    <TextValor>
+                        {valor}
+                    </TextValor>
+                    <FaCartPlus 
+                        color="white"
+                        style={{
+                            backgroundColor: 'black',
+                            padding: 3,
+                            width: 45,
+                            height: 25,
+                            marginRight: 36,
+                            borderRadius: 5
+                        }}
+                    />
+                </DivDoValor>
+            </DivProduto>
         </Conteiner>
     )
 }

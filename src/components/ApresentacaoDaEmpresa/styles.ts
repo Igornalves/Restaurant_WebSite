@@ -9,16 +9,16 @@ export const Conteiner = styled.div`
 `
 
 export const Image = styled.img`
-    width: 185px;
-    border-radius: 1000px;
-    margin-bottom: 30px;
+    width: 11.563rem;
+    border-radius: 62.5rem;
+    margin-bottom: 1.875rem;
 `
 
 export const ConteinerText = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     /* background-color: red; */
 `
 
@@ -26,7 +26,7 @@ export const Heading = styled.header`
     color: ${themeDefault.colors.Primary};
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 28px;
-    margin-bottom: 7px;
+    margin-bottom: 0.438rem;
 `
 
 export const Text = styled.text`
