@@ -7,7 +7,8 @@ import {
     DivDoValor,
     TextValor,
     TextTitulo,
-    DivProduto
+    DivProduto,
+    DivImagem
 } from "./styles";
 
 interface typeBox {
@@ -21,10 +22,12 @@ interface typeBox {
 export function CaixaDeProduto({ titulo, descricao, valor, img, alt }: typeBox) {
     return(
         <Conteiner>
-            <ImageProduto
-                src={img}
-                alt={alt}
-            />
+            <DivImagem>
+                <ImageProduto
+                    src={img}
+                    alt={alt}
+                />
+            </DivImagem>
             <DivProduto>
                 <TextTitulo>
                     {titulo}

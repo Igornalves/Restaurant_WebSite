@@ -1,18 +1,12 @@
 import styled from "styled-components";
 
 export const Conteiner = styled.div`
-    /* background-color: red; */
     width: 612px;
     height: 144px;
     display: flex;
     flex-direction: row;
     margin-bottom: 2.25rem;
     margin-left: 35px;
-
-    /* :hover{
-        border: 1px solid;
-        border-color: red;
-    } */
     
     @media (min-width: 300px) {
         display: flex;
@@ -62,6 +56,13 @@ export const Conteiner = styled.div`
         height: 145px;
         align-items: center;
         justify-content: center; 
+    }
+`
+
+export const DivImagem = styled.div`
+    transition: transform 5ms ease;
+    :hover {
+        transform: scale(1.10);
     }
 `
 

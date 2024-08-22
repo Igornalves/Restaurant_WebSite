@@ -2,11 +2,9 @@ import styled from "styled-components";
 import { themeDefault } from "../../global/themes/default";
 
 export const Conteiner = styled.div`
-    overflow-y: scroll;
-    /* height: 85rem; */
-    scrollbar-width: none;
     display: flex;
     align-items: center;
+    min-height: 240vh; 
     flex-direction: column;
 `
 
@@ -72,7 +70,9 @@ export const Menu = styled.div`
 
 export const Footer = styled.footer`
     width: 100%;
-    height: 5rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     :hover {
         background-color: ${themeDefault.colors.Quinary};
     }
@@ -81,7 +81,7 @@ export const Footer = styled.footer`
 export const ButtonCart = styled.button`
     background-color: red;
     width: 100%;
-    height: 5rem;
+    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
