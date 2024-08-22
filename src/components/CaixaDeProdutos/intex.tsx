@@ -12,10 +12,10 @@ import {
 
 interface typeBox {
     titulo: string,
-    descricao: string,
+    descricao?: string,
     valor: string,
     img: string,
-    alt: string 
+    alt?: string 
 }
 
 export function CaixaDeProduto({ titulo, descricao, valor, img, alt }: typeBox) {
@@ -44,7 +44,7 @@ export function CaixaDeProduto({ titulo, descricao, valor, img, alt }: typeBox) 
                             width: 45,
                             height: 25,
                             marginRight: 36,
-                            borderRadius: 5
+                            borderRadius: 5,
                         }}
                     />
                 </DivDoValor>
