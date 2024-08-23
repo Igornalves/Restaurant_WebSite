@@ -8,7 +8,8 @@ import {
     TextValor,
     TextTitulo,
     DivProduto,
-    DivImagem
+    DivImagem,
+    Button
 } from "./styles";
 
 interface typeBox {
@@ -39,17 +40,19 @@ export function CaixaDeProduto({ titulo, descricao, valor, img, alt }: typeBox) 
                     <TextValor>
                         {valor}
                     </TextValor>
-                    <FaCartPlus 
-                        color="white"
-                        style={{
-                            backgroundColor: 'black',
-                            padding: 3,
-                            width: 45,
-                            height: 25,
-                            marginRight: 36,
-                            borderRadius: 5,
-                        }}
-                    />
+                    <Button>
+                        <FaCartPlus 
+                            color="white"
+                            style={{
+                                backgroundColor: 'black',
+                                padding: 3,
+                                width: 45,
+                                height: 25,
+                                marginRight: 36,
+                                borderRadius: 5,
+                            }}
+                        />
+                    </Button>
                 </DivDoValor>
             </DivProduto>
         </Conteiner>

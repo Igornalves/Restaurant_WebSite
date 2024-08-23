@@ -66,6 +66,11 @@ export const DivImagem = styled.div`
     }
 `
 
+export const Button = styled.button`
+    width: 50px;
+    height: 30px;
+`
+
 export const TextTitulo = styled.header`
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
